@@ -53,8 +53,7 @@ The HTML files contain each page's content and layout. Shared visual styles are 
 
 The contact details currently shown in the site are:
 
-- **Email:** [principle@mugpi.edu](mailto:principle@mugpi.edu)
-- **Phone:** [+880 1565-642426](tel:+8801565642426)
+- **Email:** principle@mugpi.edu (Fake)
 
 These are the website's displayed school contact details. Confirm they are current and authorized before publishing; update the email and phone links in the HTML pages together if they change. For project or code questions, contact the repository maintainer through the repository's hosting platform.
 
