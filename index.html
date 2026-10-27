@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MUGPI Home</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+</head>
+
+<body class="site-page">
+    <!-- Top Bar -->
+    <section class="container-fluid px-3 py-2 bg-brand text-dark fs-14 mb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4">
+                <a href="mailto:principle@mugpi.edu" class="fs-14 align-items-center"><i
+                        class="fa-solid fa-envelope icon-sm me-2" aria-hidden="true"></i>principle@mugpi.edu</a>
+                <a href="tel:+8801565642426" class="fs-14 align-items-center"><i class="fa-solid fa-phone icon-sm me-2"
+                        aria-hidden="true"></i>+880 1565-642426</a>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="login.html" class="fs-14">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg container-fluid bg-dark px-3 py-3 sticky-top text-light h-72 align-items-center overflow-hidden">
+        <!-- School Logo -->
+        <div class="d-flex align-items-center gap-3">
+            <a href="index.html"><img src="./assets/Logo/logo.png" class="site-logo" alt="School Logo" /></a>
+            <h3 class="mb-0 fw-bold">MUGPI</h3>
+        </div>
+
+        <!-- Mobile navigation toggle -->
+        <button class="navbar-toggler text-brand" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon text-brand"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse bg-dark py-4 justify-content-end" id="mainNavCollapse">
+            <ul class="navbar-nav gap-3 gap-md-4 text-center text-light">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="teachers.html">Teacher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="students.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="results.html">Result</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="academic.html">Academic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary px-3 py-2" href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="container-fluid px-0 hero-carousel">
+        <div id="heroTrips" class="carousel slide hero" data-bs-ride="carousel" role="region"
+            aria-roledescription="carousel" aria-label="Featured school highlights">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#heroTrips" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Show slide 1"></button>
+                <button type="button" data-bs-target="#heroTrips" data-bs-slide-to="1"
+                    aria-label="Show slide 2"></button>
+                <button type="button" data-bs-target="#heroTrips" data-bs-slide-to="2"
+                    aria-label="Show slide 3"></button>
+                <button type="button" data-bs-target="#heroTrips" data-bs-slide-to="3"
+                    aria-label="Show slide 4"></button>
+                <button type="button" data-bs-target="#heroTrips" data-bs-slide-to="4"
+                    aria-label="Show slide 5"></button>
+            </div>
+            <div class="carousel-inner" aria-live="polite">
+                <div class="carousel-item active" role="group" aria-roledescription="slide" aria-label="1 of 5">
+                    <img src="./assets/Galllery/cp-01.jpg" class="d-block w-100" alt="School campus" />
+                    <div class="carousel-caption">
+                        <span class="hero-kicker">Munshiganj Polytechnic Institute</span>
+                        <h2>Welcome to MUGPI</h2>
+                        <p>
+                            Discover a learning community where students build strong
+                            foundations and prepare for what comes next.
+                        </p>
+                        <a class="btn-link" href="about.html">Discover our school</a>
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="2 of 5">
+                    <img src="./assets/Galllery/cp-02.jpg" class="d-block w-100" alt="School campus" />
+                    <div class="carousel-caption">
+                        <span class="hero-kicker">Learning and discovery</span>
+                        <h2>Grow and achieve</h2>
+                        <p>
+                            Explore an engaging academic experience that encourages
+                            curiosity, confidence, and lifelong learning.
+                        </p>
+                        <a class="btn-link" href="academic.html">Explore academics</a>
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="3 of 5">
+                    <img src="./assets/Galllery/cp-03.jpg" class="d-block w-100" alt="School campus" />
+                    <div class="carousel-caption">
+                        <span class="hero-kicker">A supportive community</span>
+                        <h2>Every student matters</h2>
+                        <p>
+                            We create a welcoming environment where students are supported
+                            to learn, participate, and do their best.
+                        </p>
+                        <a class="btn-link" href="students.html">Student resources</a>
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="4 of 5">
+                    <img src="./assets/Galllery/cp-04.jpg" class="d-block w-100" alt="School campus" />
+                    <div class="carousel-caption">
+                        <span class="hero-kicker">Dedicated educators</span>
+                        <h2>Guided by teachers</h2>
+                        <p>
+                            Meet the educators who bring experience, care, and commitment
+                            to the classroom every day.
+                        </p>
+                        <a class="btn-link" href="teachers.html">Meet our teachers</a>
+                    </div>
+                </div>
+                <div class="carousel-item" role="group" aria-roledescription="slide" aria-label="5 of 5">
+                    <img src="./assets/Galllery/cp-05.jpg" class="d-block w-100" alt="School campus" />
+                    <div class="carousel-caption">
+                        <span class="hero-kicker">Our history and future</span>
+                        <h2>Learning with purpose</h2>
+                        <p>
+                            Learn about our institute, our community, and the values that
+                            shape the student experience.
+                        </p>
+                        <a class="btn-link" href="about.html">Our story</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#heroTrips" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous slide</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#heroTrips" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next slide</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- History section -->
+    <section class="container d-flex flex-column gap-4 my-5 bg-light">
+
+        <h2 class="fw-bold ps-4 border-start border-5 border-dark">
+            History
+        </h2>
+
+        <div class="row align-items-center g-4">
+
+            <div class="col-12 col-md-5 text-center">
+                <img src="./assets/Galllery/cp-07.jpg" class="img-fluid rounded shadow-sm" alt="MUGPI Campus" />
+            </div>
+
+            <div class="col-md-7">
+                <h4 class="fw-semibold text-brand-secondary mb-3">
+                    Munshiganj Government Polytechnic Institute
+                </h4>
+                <p class="text-muted text-justify">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Recusandae, rem. Voluptas provident nesciunt natus accusamus omnis
+                    aut numquam vel magnam maxime debitis laudantium beatae adipisci.
+                </p>
+                <p class="text-muted text-justify">
+                    Corrupti unde in, architecto doloribus modi a quia commodi eius nisi
+                    laborum odio perferendis. Sapiente odio consequatur sequi aliquid
+                    impedit nobis praesentium facere earum cum quos qui, voluptate
+                    corporis explicabo obcaecati? Quaerat quod, accusantium nobis
+                    veritatis, asperiores ad laboriosam mollitia velit labore sequi sint
+                    suscipit amet fugit fugiat praesentium.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Academic departments -->
+    <section class="container d-flex flex-column gap-4 my-5 bg-light">
+        <h2 class="fw-bold ps-4 border-start border-5 border-dark">Academic Departments</h2>
+
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Computer Science</h5>
+                            <p class="card-text text-muted text-justify">Study programming, software development,
+                                databases, computer systems, and networking through technical coursework and practical
+                                projects.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Electromedical</h5>
+                            <p class="card-text text-muted text-justify">Learn the fundamentals of medical electronics,
+                                healthcare equipment, electrical safety, testing, and maintenance.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Electronics Department</h5>
+                            <p class="card-text text-muted text-justify">Explore electronic circuits, digital systems,
+                                communication fundamentals, measurement, and troubleshooting.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Electrical Department</h5>
+                            <p class="card-text text-muted text-justify">Build knowledge of electrical circuits,
+                                machines, power systems, installation, and safe operation.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Civil</h5>
+                            <p class="card-text text-muted text-justify">Study construction, roads, surveying, soil and
+                                materials testing, water supply, and sanitation.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">Mechanical</h5>
+                            <p class="card-text text-muted text-justify">Develop practical understanding of machines,
+                                manufacturing processes, mechanical systems, and maintenance.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="card h-100 shadow-sm">
+                    <div class="card-body d-flex flex-column justify-content-between p-4">
+                        <div>
+                            <h5 class="card-title fw-bold text-brand-secondary mb-3">RAC (Refrigeration and Air
+                                Conditioning)</h5>
+                            <p class="card-text text-muted text-justify">Learn refrigeration and air-conditioning
+                                principles, system components, installation, servicing, and maintenance.</p>
+                        </div>
+                        <a href="academic.html" class="btn-link mt-3">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Teachers -->
+    <section class="container d-flex flex-column gap-4 my-5 bg-light">
+        <h2 class="fw-bold ps-4 border-start border-5 border-dark">Teacher Section</h2>
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="card teacher-card shadow-sm text-center">
+                    <img src="./assets/Teachers/tehr-0.png" class="card-img-top teacher-card-image"
+                        alt="Teacher portrait" />
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-1 fs-20">Wadud</h6>
+                        <p class="card-text text-secondary fs-16 mb-4">
+                            Principal & Headmaster
+                        </p>
+                        <a href="teachers.html" class="btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card teacher-card shadow-sm text-center">
+                    <img src="./assets/Teachers/tehr-1.png" class="card-img-top teacher-card-image"
+                        alt="Teacher portrait" />
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-1 fs-20">Mamun</h6>
+                        <p class="card-text text-secondary fs-16 mb-4">
+                            Sr. Mathematics Teacher
+                        </p>
+                        <a href="teachers.html" class="btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card teacher-card shadow-sm text-center">
+                    <img src="./assets/Teachers/tehr-2.png" class="card-img-top teacher-card-image"
+                        alt="Teacher portrait" />
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-1 fs-20">Rakib</h6>
+                        <p class="card-text text-secondary fs-16 mb-4">
+                            Sr. English Teacher
+                        </p>
+                        <a href="teachers.html" class="btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card teacher-card shadow-sm text-center">
+                    <img src="./assets/Teachers/tehr-3.png" class="card-img-top teacher-card-image"
+                        alt="Teacher portrait" />
+                    <div class="card-body p-3">
+                        <h6 class="card-title mb-1 fs-20">Arif</h6>
+                        <p class="card-text text-secondary fs-16 mb-4">
+                            Sr. Bangla Teacher
+                        </p>
+                        <a href="teachers.html" class="btn-link">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices -->
+    <section class="container d-flex flex-column gap-4 my-5 bg-light">
+        <h2 class="fw-bold ps-4 border-start border-5 border-dark">Notice Section</h2>
+        <div class="card shadow-sm border-0 overflow-hidden">
+            <div class="table-responsive">
+                <table class="table table-hover table-striped mb-0">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col" class="py-3 px-4" style="width: 10%">
+                                Sl No.
+                            </th>
+                            <th scope="col" class="py-3" style="width: 70%">Notice</th>
+                            <th scope="col" class="py-3" style="width: 20%">Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="px-4 fw-bold">01</td>
+                            <td>
+                                Upcoming Semester Mid-term Examinations Routine published.
+                            </td>
+                            <td>05-05-2025</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 fw-bold">02</td>
+                            <td>
+                                Annual Sports & Cultural Week registration is now open for
+                                students.
+                            </td>
+                            <td>07-10-2025</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 fw-bold">03</td>
+                            <td>
+                                Submission deadline for final technical project proposals
+                                and reviews.
+                            </td>
+                            <td>17-10-2025</td>
+                        </tr>
+                        <tr>
+                            <td class="px-4 fw-bold">04</td>
+                            <td>
+                                Winter semester vacation schedule and administrative office
+                                hours.
+                            </td>
+                            <td>01-01-2026</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white pt-5 pb-3 px-3">
+        <div class="container border-bottom border-secondary pb-3">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="index.html" class="nav-link p-0 text-white-50">Home</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="about.html" class="nav-link p-0 text-white-50">About Us</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="teachers.html" class="nav-link p-0 text-white-50">Our Faculty</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="academic.html" class="nav-link p-0 text-white-50">Academics</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Student Hub</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2">
+                            <a href="students.html" class="nav-link p-0 text-white-50">Student List</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="results.html" class="nav-link p-0 text-white-50">Exam Results</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="academic.html" class="nav-link p-0 text-white-50">Academic Calendar</a>
+                        </li>
+                        <li class="nav-item mb-2">
+                            <a href="login.html" class="nav-link p-0 text-white-50">Student Portal</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Contact</h5>
+                    <ul class="nav flex-column text-white-50 fs-16">
+                        <li class="mb-2"><a href="mailto:principle@mugpi.edu">principle@mugpi.edu</a></li>
+                        <li class="mb-2"><a href="tel:+8801565642426">+8801565642426</a></li>
+                        <li class="mb-2">Mirkadim, Munshiganj, Bangladesh</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <form>
+                        <h5 class="fw-bold text-white mb-2">Subscribe to our newsletter</h5>
+                        <p class="text-white-50 fs-14 mb-3">Monthly digest of school updates and academic news.</p>
+                        <div class="input-group">
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address"
+                                required />
+                            <button class="btn btn-primary px-2" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-column flex-md-row align-items-md-center gap-2 justify-content-between pt-4 pb-2 text-secondary fs-14">
+            <p class="mb-0">&copy; 2027 Munshiganj Government Polytechnic Institute. All rights reserved.</p>
+            <p id="datetime" class="mb-0"></p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="./js/main.js"></script>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

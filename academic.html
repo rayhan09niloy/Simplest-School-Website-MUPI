@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>School - Academic</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+</head>
+
+<body class="site-page">
+
+    <!-- Top Bar -->
+    <section class="container-fluid px-3 py-2 bg-brand text-dark fs-14 mb-0">
+        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex gap-4">
+                <a href="mailto:principle@mugpi.edu" class="fs-14 align-items-center"><i class="fa-solid fa-envelope icon-sm me-2" aria-hidden="true"></i>principle@mugpi.edu</a>
+                <a href="tel:+8801565642426" class="fs-14 align-items-center"><i class="fa-solid fa-phone icon-sm me-2" aria-hidden="true"></i>+880 1565-642426</a>
+            </div>
+            <div class="d-flex gap-3">
+                <a href="login.html" class="fs-14">Login</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg container-fluid bg-dark px-3 py-3 sticky-top text-light h-72 align-items-center justify-content-between">
+
+        <!-- School Logo -->
+        <a href="index.html"><img src="./assets/Logo/logo.png" class="site-logo" alt="School Logo"></a>
+
+        <!-- Mobile navigation toggle -->
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse"
+            data-bs-target="#mainNavCollapse" aria-controls="mainNavCollapse" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Nav links -->
+        <div class="collapse navbar-collapse" id="mainNavCollapse">
+            <ul class="navbar-nav ms-auto gap-lg-3">
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="teachers.html">Teacher</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="students.html">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="results.html">Result</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active text-white" href="academic.html">Academic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-primary px-3 py-2" href="login.html">Login</a>
+                </li>
+            </ul>
+
+        </div>
+    </nav>
+
+    <!-- Breadcrumb -->
+    <nav aria-label="breadcrumb" class="container mt-3 bg-light border-bottom mb-4 h-40">
+        <ol class="breadcrumb fs-14 list-unstyled d-flex gap-2 mb-0">
+            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Academic</li>
+        </ol>
+    </nav>
+
+    <!-- Technical departments -->
+    <section id="departments" class="container d-flex flex-column gap-4 my-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold ps-4 border-start border-5 border-dark">Technical Departments</h2>
+            <p class="text-muted">Explore the institute's technical fields of study.</p>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Computer Science</h5>
+                            <p class="card-text text-muted flex-grow-1">Study programming, software development, databases, computer systems, and networking through technical coursework and practical projects.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Electromedical</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn the fundamentals of medical electronics, healthcare equipment, electrical safety, testing, and maintenance.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Electronics Department</h5>
+                            <p class="card-text text-muted flex-grow-1">Explore electronic circuits, digital systems, communication fundamentals, measurement, and troubleshooting.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Electrical Department</h5>
+                            <p class="card-text text-muted flex-grow-1">Build knowledge of electrical circuits, machines, power systems, installation, and safe operation.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Civil</h5>
+                            <p class="card-text text-muted flex-grow-1">Study building and road construction, surveying, soil and construction-material testing, water supply, and sanitation.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/pages/static-pages/civil-technology-jahulk-6a9d8cab035d90ab8571ba71" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">Mechanical</h5>
+                            <p class="card-text text-muted flex-grow-1">Develop practical understanding of machines, manufacturing processes, mechanical systems, and maintenance.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/pages/static-pages/mechanical-technology-afu5mj-6a9ff5aa035d90ab8572cb38" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <div class="card-body p-4 d-flex flex-column">
+                            <h5 class="card-title fw-bold">RAC (Refrigeration and Air Conditioning)</h5>
+                            <p class="card-text text-muted flex-grow-1">Learn refrigeration and air-conditioning principles, system components, installation, servicing, and maintenance.</p>
+                            <a href="https://munshiganj.polytech.gov.bd/" class="btn-link align-self-start mt-3">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic calendar -->
+    <section class="container d-flex flex-column gap-4 my-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold ps-4 border-start border-5 border-dark">Academic Calendar</h2>
+            <p class="text-muted">Important dates, examination schedules, and holidays for the 2026 academic year</p>
+
+            <div class="card shadow-sm border-0 overflow-hidden">
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-primary">
+                            <tr>
+                                <th scope="col" class="py-3 ps-4" style="width: 120px;">SL No.</th>
+                                <th scope="col" class="py-3">Event Description</th>
+                                <th scope="col" class="py-3 pe-4 text-end">Duration / Date</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-4 fw-medium text-muted">01</td>
+                                <td class="fw-medium">Semester Plan Details & Orientation</td>
+                                <td class="pe-4 text-end"><span class="badge bg-primary-subtle text-brand-secondary border border-primary-subtle px-2 py-1">08-01-2026</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-medium text-muted">02</td>
+                                <td class="fw-medium">Eid Ul Fitr Vacation</td>
+                                <td class="pe-4 text-end"><span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-2 py-1">19/03/26 - 28/03/26</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-medium text-muted">03</td>
+                                <td class="fw-medium">Mid Term Examination</td>
+                                <td class="pe-4 text-end"><span class="badge bg-warning-subtle text-warning-emphasis border border-warning-subtle px-2 py-1">08/04/26 - 15/04/26</span></td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4 fw-medium text-muted">04</td>
+                                <td class="fw-medium">Eid Ul Azha Vacation</td>
+                                <td class="pe-4 text-end"><span class="badge bg-secondary-subtle text-secondary border border-secondary-subtle px-2 py-1">19/05/26 - 28/05/26</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="container-fluid bg-dark text-white pt-5 pb-3 px-3">
+        <div class="container border-bottom border-secondary pb-3">
+            <div class="row g-4">
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Quick Links</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-white-50">Home</a></li>
+                        <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-white-50">About Us</a></li>
+                        <li class="nav-item mb-2"><a href="teachers.html" class="nav-link p-0 text-white-50">Our Faculty</a></li>
+                        <li class="nav-item mb-2"><a href="academic.html" class="nav-link p-0 text-white-50">Academics</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Student Hub</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-2"><a href="students.html" class="nav-link p-0 text-white-50">Student List</a></li>
+                        <li class="nav-item mb-2"><a href="results.html" class="nav-link p-0 text-white-50">Exam Results</a></li>
+                        <li class="nav-item mb-2"><a href="academic.html" class="nav-link p-0 text-white-50">Academic Calendar</a></li>
+                        <li class="nav-item mb-2"><a href="login.html" class="nav-link p-0 text-white-50">Student Portal</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <h5 class="text-secondary mb-3">Contact</h5>
+                    <ul class="nav flex-column text-white-50 fs-16">
+                        <li class="mb-2"><a href="mailto:principle@mugpi.edu">principle@mugpi.edu</a></li>
+                        <li class="mb-2"><a href="tel:+8801565642426">+8801565642426</a></li>
+                        <li class="mb-2">Mirkadim, Munshiganj, Bangladesh</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3">
+                    <form>
+                        <h5 class="fw-bold text-white mb-2">Subscribe to our newsletter</h5>
+                        <p class="text-white-50 fs-14 mb-3">Monthly digest of school updates and academic news.</p>
+                        <div class="input-group">
+                            <input id="newsletter1" type="email" class="form-control" placeholder="Email address" required>
+                            <button class="btn btn-primary px-2" type="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="container d-flex flex-column flex-md-row align-items-md-center gap-2 justify-content-between pt-4 pb-2 text-secondary fs-14">
+            <p class="mb-0">&copy; 2027 Munshiganj Government Polytechnic Institute. All rights reserved.</p>
+            <p id="datetime" class="mb-0"></p>
+        </div>
+    </footer>
+    <script src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

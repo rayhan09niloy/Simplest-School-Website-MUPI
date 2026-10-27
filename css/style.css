@@ -1,0 +1,442 @@
+/* Importing Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Creating CSS variables */
+:root {
+    --brand-color: #cfbc11;
+    --brand-secondary: #04104a;
+    /* Bootstrap primary utilities use the school's navy theme across the site. */
+    --bs-primary: var(--brand-secondary);
+    --bs-primary-rgb: 4, 16, 74;
+    --bs-primary-text-emphasis: #020824;
+    --bs-primary-bg-subtle: #e9ebf2;
+    --bs-primary-border-subtle: #b6bbcd;
+}
+
+/* Global preferences */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.site-logo {
+    height: 48px;
+    width: auto;
+}
+
+/* Icon sizes */
+.icon-xs {
+    font-size: 12px;
+}
+
+.icon-sm {
+    font-size: 16px;
+}
+
+.icon-md {
+    font-size: 20px;
+}
+
+.icon-rg {
+    font-size: 24px;
+}
+
+/* Every font size declaration */
+.fs-14 {
+    font-size: 14px !important;
+    line-height: 1.6;
+}
+
+.fs-16 {
+    font-size: 16px !important;
+    line-height: 1.5;
+}
+
+.fs-20 {
+    font-size: 20px !important;
+    line-height: 1.2;
+}
+
+.fs-18 {
+    font-size: 18px !important;
+    line-height: 1.3;
+}
+
+.fs-24 {
+    font-size: 24px !important;
+    line-height: 1.4;
+}
+
+/* Good line-heights */
+.lh-1 {
+    line-height: 1.1;
+}
+
+.lh-2 {
+    line-height: 1.2;
+}
+
+.lh-3 {
+    line-height: 1.3;
+}
+
+.lh-4 {
+    line-height: 1.4;
+}
+
+.lh-5 {
+    line-height: 1.5;
+}
+
+.lh-6 {
+    line-height: 1.6;
+}
+
+/* Fixed width */
+.w-40 {
+    width: 40px;
+}
+
+.w-48 {
+    width: 48px;
+}
+
+.w-56 {
+    width: 56px;
+}
+
+.w-72 {
+    width: 72px;
+}
+
+.mxw-440 {
+    max-width: 440px;
+}
+
+/* Fixed height */
+.h-40 {
+    height: 40px;
+}
+
+.h-48 {
+    height: 48px;
+}
+
+.h-56 {
+    height: 56px;
+}
+
+.h-72 {
+    height: 72px;
+}
+
+/* Bootstrap links use the site text color; hover adds a visible underline. */
+a {
+    color: inherit !important;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #ced8f9 !important;
+    text-decoration: underline;
+}
+
+/* Color variables */
+.bg-brand {
+    background-color: var(--brand-color);
+}
+
+.bg-brand-secondary {
+    background-color: var(--brand-secondary);
+}
+
+.bd-dark {
+    background-color: #0e0e0e;
+}
+
+
+/* Text color variables */
+.text-brand {
+    color: var(--brand-color) !important;
+}
+
+.text-brand-secondary {
+    color: var(--brand-secondary) !important;
+}
+
+a.text-brand-secondary {
+    color: var(--brand-secondary) !important;
+}
+
+/* Bootstrap .btn-link is reset to a consistent text-style control site-wide. */
+.btn-link {
+    display: inline-block;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: var(--brand-secondary) !important;
+    font-weight: 600;
+    text-align: inherit;
+    text-decoration: none;
+    vertical-align: baseline;
+}
+
+.btn-link:hover,
+.btn-link:focus-visible {
+    background: transparent;
+    color: #020824 !important;
+    text-decoration: underline;
+}
+
+.btn-link:focus-visible {
+    outline: 2px solid var(--brand-secondary);
+    outline-offset: 3px;
+}
+
+/* Navbar link-buttons are white, then switch to brand yellow on hover/focus. */
+.navbar .btn-link {
+    color: #fff !important;
+}
+
+.navbar .btn-link:hover,
+.navbar .btn-link:focus-visible {
+    color: var(--brand-color) !important;
+}
+
+/* Footer link-buttons are yellow, then switch to white on hover/focus. */
+footer .btn-link {
+    color: var(--brand-color) !important;
+}
+
+footer .btn-link:hover,
+footer .btn-link:focus-visible {
+    color: #fff !important;
+}
+
+.teacher-card {
+    overflow: hidden;
+}
+
+.teacher-card-image {
+    flex: 0 0 220px;
+    object-fit: cover;
+    object-position: center 30%;
+}
+
+.teacher-card .card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 0;
+}
+
+/* Site-wide Bootstrap primary buttons use white, navy text, and a yellow hover state. */
+.site-page .btn-primary {
+    --bs-btn-bg: #fff !important;
+    --bs-btn-color: var(--brand-secondary) !important;
+    --bs-btn-hover-bg: var(--brand-color) !important;
+    --bs-btn-hover-color: var(--brand-secondary) !important;
+    --bs-btn-hover-border-color: #020824;
+    --bs-btn-active-bg: #020824;
+    --bs-btn-active-border-color: #020824;
+}
+
+/* Bootstrap outline-primary buttons use navy with white text on hover and when active. */
+.btn-outline-primary {
+    --bs-btn-color: var(--brand-secondary);
+    --bs-btn-border-color: var(--brand-secondary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--brand-secondary);
+    --bs-btn-hover-border-color: var(--brand-secondary);
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--brand-secondary);
+    --bs-btn-active-border-color: var(--brand-secondary);
+}
+
+a.btn-outline-primary {
+    color: var(--brand-secondary) !important;
+}
+
+.site-page a.btn-primary {
+    color: var(--bs-btn-color) !important;
+    text-decoration: none;
+}
+
+.site-page a.btn-primary:hover,
+.site-page a.btn-primary:focus-visible {
+    color: var(--brand-secondary) !important;
+    text-decoration: none;
+}
+
+.site-page a.btn-primary:active {
+    color: #fff !important;
+    text-decoration: none;
+}
+
+/* Keep Bootstrap table-primary cells aligned with the site's navy palette. */
+.table-primary {
+    --bs-table-color: #fff;
+    --bs-table-bg: var(--brand-secondary);
+    --bs-table-border-color: #25305e;
+    --bs-table-striped-bg: #0b1956;
+    --bs-table-striped-color: #fff;
+    --bs-table-hover-bg: #12205b;
+    --bs-table-hover-color: #fff;
+}
+
+a.btn-outline-primary:hover,
+a.btn-outline-primary:focus-visible,
+a.btn-outline-primary:active {
+    color: #fff !important;
+}
+
+
+.hero-carousel {
+    height: 84vh;
+    overflow: hidden;
+}
+
+.hero-carousel .carousel,
+.hero-carousel .carousel-inner,
+.hero-carousel .carousel-item {
+    height: 100%;
+}
+
+.hero-carousel .carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-carousel .carousel-item::before {
+    position: absolute;
+    z-index: 1;
+    inset: 0;
+    background: linear-gradient(90deg, rgba(19, 19, 20, 0.82), rgba(4, 16, 74, 0.12));
+    content: "";
+}
+
+.hero-carousel .carousel-caption {
+    z-index: 2;
+    right: auto;
+    bottom: 16%;
+    left: 10%;
+    padding: 0;
+    text-align: left;
+}
+
+.hero-kicker {
+    display: inline-block;
+    margin-bottom: 0.75rem;
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+.hero-carousel .carousel-caption h2 {
+    margin-bottom: 1rem;
+    color: #fff;
+    font-size: clamp(2rem, 5vw, 4rem);
+    font-weight: 700;
+}
+
+.hero-carousel .carousel-caption p {
+    max-width: 560px;
+    margin-bottom: 1.5rem;
+    color: #fff;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+    line-height: 1.6;
+}
+
+.hero-carousel .carousel-caption .btn {
+    padding: 0.75rem 1.5rem;
+    background-color: #fff;
+    color: var(--brand-secondary) !important;
+    font-weight: 600;
+}
+
+.hero-carousel .carousel-caption .btn-link {
+    color: #fff !important;
+}
+
+.hero-carousel .carousel-caption .btn-link:hover,
+.hero-carousel .carousel-caption .btn-link:focus-visible {
+    color: var(--brand-color) !important;
+}
+
+.hero-carousel .carousel-caption .btn:hover {
+    background-color: var(--brand-color);
+}
+
+.hero-carousel .carousel-indicators {
+    z-index: 3;
+}
+
+@media (max-width: 576px) {
+    .hero-carousel {
+        height: 72vh;
+    }
+
+    .hero-carousel .carousel-caption {
+        right: 10%;
+        bottom: 18%;
+    }
+
+    .hero-kicker {
+        font-size: 0.75rem;
+    }
+
+    .hero-carousel .carousel-caption p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Bootstrap cards get a subtle border and lift on hover. */
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+/* Section accent lines use the brand color. */
+.section-accent {
+    width: 60px;
+    height: 3px;
+    background-color: var(--brand-color);
+    border-radius: 2px;
+    margin: 8px auto 0 auto;
+}
+
+/* Clean breadcrumb container */
+.breadcrumb-container {
+    background-color: var(--bs-tertiary-bg);
+    border-bottom: 1px solid var(--bs-border-color);
+}
+
+/* Carousel feedback quotes */
+.feedback-quote {
+    font-style: italic;
+    color: var(--brand-secondary);
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 600;
+}
